@@ -13,8 +13,6 @@ let calculator = {
 
 let calculation = [];
 
-// Calculation on top of the screen
-
 const handleErase = () => {
   display.innerText = 0;
   calculator = {
