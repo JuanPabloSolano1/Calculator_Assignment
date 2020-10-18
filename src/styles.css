@@ -1,16 +1,16 @@
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  background: #eaebec;
 }
 
 .container {
+  padding: 20px;
   height: 780px;
   width: 500px;
-  background-color: black;
+  background: #3c4857;
   margin: 10px auto;
-  left: 50%;
-  border-radius: 12px;
-  border: solid;
-  margin-bottom: 80px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 .header {
@@ -20,10 +20,8 @@ body {
 .calculator-display {
   height: 100px;
   width: 430px;
-  background-color: rgb(66, 63, 63);
   margin: 60px auto;
-  border-radius: 12px;
-  border: solid 1px grey;
+  border-bottom: 1px dotted white;
 }
 .button-container {
   display: flex;
@@ -37,25 +35,31 @@ body {
   height: 70px;
   margin-right: 20px;
   margin-bottom: 20px;
-  border-radius: 50%;
   font-size: 20px;
-  border: solid 1px;
   color: white;
-  background-color: rgb(66, 63, 63);
+  border-radius: 50%;
   cursor: pointer;
+  background: #3c4857;
+  border: none;
+  box-sizing: border-box;
+  appearance: none;
+  transition: all 400ms ease-out;
 }
 
 .operator-button {
   width: 70px;
   height: 70px;
-  margin-right: 10px;
-  background-color: #f54b05;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
   color: white;
-  border-radius: 50px;
-  opacity: 0.8;
-  font-size: 25px;
-  border: solid 1px;
+  border-radius: 50%;
   cursor: pointer;
+  background: #404d5e;
+  border: none;
+  box-sizing: border-box;
+  appearance: none;
+  transition: all 400ms ease-out;
 }
 
 .reset-button {
@@ -63,9 +67,9 @@ body {
   height: 70px;
   border-radius: 12px;
   background-color: black;
-  border: solid 1px white;
-  color: white;
-  background-color: red;
+  border: none;
+  color: #d95d4e;
+  background-color: #404d5e;
   opacity: 0.8;
   margin-left: 10px;
   font-size: 20px;
@@ -79,16 +83,16 @@ body {
   margin-bottom: 20px;
   border-radius: 50%;
   font-size: 20px;
-  border: solid 1px;
+  border: none;
   color: white;
-  background-color: rgb(66, 63, 63);
+  background-color: #404d5e;
   cursor: pointer;
 }
 .equal-button {
-  background-color: green;
+  background-color: #6a83a1;
   width: 430px;
   height: 70px;
-  border: solid 1px white;
+  border: none;
   color: white;
   font-size: 20px;
   margin-bottom: 30px;
@@ -97,14 +101,15 @@ body {
   opacity: 0.8;
   margin-top: 10px;
 }
+
 .trig-button {
   width: 70px;
   height: 70px;
   border-radius: 50px;
   background-color: black;
-  border: solid 1px white;
+  border: none;
   color: white;
-  background-color: blue;
+  background-color: #404d5e;
   opacity: 0.7;
   margin-left: 10px;
   font-size: 20px;
@@ -117,18 +122,23 @@ button:focus {
   box-shadow: none;
 }
 
-button:hover {
-  opacity: 0.6;
+button:active {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-button:active {
-  background-color: #333131;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
 .display-result {
   float: right;
   font-size: 79px;
   margin-right: 18px;
   color: white;
+}
+
+button:hover {
+  background: #6a83a1;
+  color: white;
+}
+
+.calculator-process {
+  color: #d3d3d3;
+  font-size: 20px;
 }
